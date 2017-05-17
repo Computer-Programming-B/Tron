@@ -17,9 +17,9 @@ Start with a single player game
 + If key means "down", increment y
 + If key means "left", decrement x
 + If key means "right", increment x
-5. The game is over when we cross a light cycle trail. To find out if we are touching the trail, we will use the `get()` function. We will also use `text()` to display a message that the game is over.
+5. The game is over when we cross a light cycle trail. To find out if we are touching the trail, we will use the `get()` function. We will also use `text()` to display a message that the game is over.<pre><code>
     if get(x,y) != color(0,0,0): #if the color at this position isn't black, I ran into something!       
-    text("Game Over!",300,200);   
+    text("Game Over!",300,200);   </code></pre>
 6. After the `get()` use the `point()` function to draw a point at the current coordinates.
 7. For now, don't use `smooth()` or `strokeWeight()` as this will make the program much more complicated.
 At this point you should have a working single player game. You will want the game to end if your trail crosses another trail or goes out of bounds.
@@ -29,10 +29,10 @@ Then add a computer opponent
 1. At this point our `draw()` function is getting big and ugly. Once you get the basic single player tron game working, break it up into functions—put the code that moves the Human player in its own `human()` function.
 2. Now we can concentrate on the computer. We need a function similar to `human()`, let’s call it `computer()`. We’ll use `human()` as a basis for `computer()`. What will be the same? different?
 3. The computer will need its own variables for its position and direction. The direction variable is similar to key in that it could also be a char but it’s not really a key press, it just stores the direction the computer is traveling
-4. The problem now is that the computer never changes direction, We need to add code so that if the computer is about to run into a wall, it will change direction. That means changing the computer direction variable (called `comp` in my program), something like:
+4. The problem now is that the computer never changes direction, We need to add code so that if the computer is about to run into a wall, it will change direction. That means changing the computer direction variable (called `comp` in my program), something like:<pre><code>
     if (compDir==UP): #if the computer is traveling up toward the top of the screen        
       compY-=1 #move the computer one pixel up     
-    if get (compX,compY-1)  != color(0,0,0): #then look one more pixel ahead, am I going to run into something that is not black?             compDir=RIGHT  # turn!     
+    if get (compX,compY-1)  != color(0,0,0): #then look one more pixel ahead, am I going to run into something that is not black?             compDir=RIGHT  # turn!    </code></pre> 
 
 Extensions:
 -----------
