@@ -8,7 +8,7 @@ Tron was a Disney movie that was released in 1982. It was one of the earliest fe
  
 Start with a single player game
 -------------------------------
-You may find slides 354 - 367 of the PythonProcessing PowerPoint helpful 
+You may find slides 354 - 367 of the PythonProcessing PowerPoint helpful in writing a single player tron game.
 1. Start a new program in processing with `setup()` and `draw()` functions.
 2. In `setup()` set the background to black. Create a border that is a different color than the background, This border will be the walls that contain the light cycles.
 3. Declare and initialize three global variables `x`, `y` and `direction`.
