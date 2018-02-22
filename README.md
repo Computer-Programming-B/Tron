@@ -8,15 +8,15 @@ Tron was a Disney movie that was released in 1982. It was one of the earliest fe
  
 Start with a single player game
 -------------------------------
- 
+You may find slides 354 - 367 of the PythonProcessing PowerPoint helpful 
 1. Start a new program in processing with `setup()` and `draw()` functions.
 2. In `setup()` set the background to black. Create a border that is a different color than the background, This border will be the walls that contain the light cycles.
 3. Declare and initialize three global variables `x`, `y` and `direction`.
-4. In `draw()` write an `if/else` that checks the value stored in `key`.
-+ If key means "up", decrement y
-+ If key means "down", increment y
-+ If key means "left", decrement x
-+ If key means "right", increment x
+4. In `keyPressed()` write an `if` that checks the value stored in `key`.
++ If key means "up", decrease y
++ If key means "down", increase y
++ If key means "left", decrease x
++ If key means "right", increase x
 5. The game is over when we cross a light cycle trail. To find out if we are touching the trail, we will use the `get()` function. We will also use `text()` to display a message that the game is over.    
 ```python
 if get(x,y) != color(0,0,0): #if the color at this position isn't black, I ran into something!       
