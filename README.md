@@ -32,12 +32,12 @@ You may find slides 374 - 386 of the PythonProcessing PowerPoint helpful in addi
 1. At this point our `draw()` function is getting big and ugly. Once you get the basic single player tron game working, break it up into functions—put the code that moves the Human player in its own `human()` function.
 2. Now we can concentrate on the computer. We need a function similar to `human()`, let’s call it `computer()`. We’ll use `human()` as a basis for `computer()`. What will be the same? different?
 3. The computer will need its own variables for its position and direction. The direction variable is similar to key in that it could also be a char but it’s not really a key press, it just stores the direction the computer is traveling
-4. The problem now is that the computer never changes direction, We need to add code so that if the computer is about to run into a wall, it will change direction. That means changing the computer direction variable (called `comp` in my program), something like:   
+4. The problem now is that the computer never changes direction, We need to add code so that if the computer is about to run into a wall, it will change direction. That means changing the computer direction variable (called `compDir` in my program), something like:   
 ```python
-if compDir==UP: #if the computer is traveling up toward the top of the screen        
-    compY-=1 #move the computer one pixel up     
-if get (compX,compY-1)  != color(0,0,0): #then look one more pixel ahead, am I going to run into something that is not black?      
-    compDir=RIGHT  # turn!
+if(compDir == RIGHT):                   # if the computer is moving right
+   compX = compX + 1                    # move the computer one pixel right
+   if(get(compX+1,compY) != color(0)):  # then look one more pixel ahead, am I going to run into something that is not black?
+      compDir = DOWN                    # turn!
 ```
 
 Extensions:
