@@ -28,6 +28,7 @@ At this point you should have a working single player game. You will want the ga
  
 Then add a computer opponent
 ----------------------------
+You may find slides 374 - 386 of the PythonProcessing PowerPoint helpful in adding a computer opponent.
 1. At this point our `draw()` function is getting big and ugly. Once you get the basic single player tron game working, break it up into functions—put the code that moves the Human player in its own `human()` function.
 2. Now we can concentrate on the computer. We need a function similar to `human()`, let’s call it `computer()`. We’ll use `human()` as a basis for `computer()`. What will be the same? different?
 3. The computer will need its own variables for its position and direction. The direction variable is similar to key in that it could also be a char but it’s not really a key press, it just stores the direction the computer is traveling
