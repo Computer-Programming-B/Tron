@@ -36,7 +36,7 @@ You may find slides 374 - 386 of the PythonProcessing PowerPoint helpful in addi
 ```python
 if(compDir == RIGHT):                   # if the computer is moving right
    compX = compX + 1                    # move the computer one pixel right
-   if(get(compX+1,compY) != color(0)):  # then look one more pixel ahead, am I going to run into something that is not black?
+   if(get(compX+1,compY) != color(0)):  # then look one pixel ahead, Will I run into something that isn't black?
       compDir = DOWN                    # turn!
 ```
 
