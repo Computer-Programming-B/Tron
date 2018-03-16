@@ -46,5 +46,5 @@ If you have extra time you can add more features to the game to make it more int
 
 Samples of Student Work 
 -----------------------
-####(use the left and right mouse buttons to control the light cycle)
+#### (use the left and right mouse buttons to control the light cycle)   
 [Marc](https://trinket.io/embed/python/df5a0e966e?outputOnly=true&runOption=run&start=result)   
