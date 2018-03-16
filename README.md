@@ -44,5 +44,6 @@ Extensions:
 -----------
 If you have extra time you can add more features to the game to make it more interesting. You can make the line thicker by making the dots with `rect()` instead of `point()`, just make sure to move the x and y coordinates by one more than the size of the rectangle. You'll probably want a variable to hold the size of the dot. You can add extra computer opponents or even another human player. You could start the `frameRate` out at a low value, and increase it as the game progresses to make the light cycles move faster the longer you play. Be creative and have fun, your tron game doesn't have to look or work like any other.
 
-Samples of Student Work
+Samples of Student Work (use the left and right mouse buttons to control the light cycle)
 -----------------------
+[Marc](https://trinket.io/embed/python/df5a0e966e?outputOnly=true&runOption=run&start=result)   
