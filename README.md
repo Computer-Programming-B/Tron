@@ -23,7 +23,8 @@ Start with a single player game
 + If key means "right", set `direction` to 2
 + If key means "down", set `direction` to 3
 + If key means "left", set `direction` to 4
-5. The game is over when we cross a light cycle trail. To find out if we are touching the trail, we will use add a `notBlack()` function. At the bottom of the program   
+5. Run the program. Once a person clicks on the screen, the light cycle should now be able to turn
+6. The game is over when we cross a light cycle trail. To find out if we are touching the trail, we will use add a `notBlack()` function. At the bottom of the program   
 ```javascript
 function notBlack(){
   let a = get(x,y);
@@ -33,10 +34,10 @@ function notBlack(){
   return false;
 }  
 ```
-6. At the top of `draw()` add an `if` statement that checks if (x,y) is not black like the one below   
-![](Tron2.JPG)
-7. For now, don't use `smooth()` or `strokeWeight()` as this will make the program much more complicated.
-At this point you should have a working single player game. You will want the game to end if your trail crosses another trail or goes out of bounds.
+7. At this point you should have a working single player game. To end the game if your trail crosses another trail or goes out of bounds add an `if` statement at the top of `draw()` that checks if (x,y) is not black like the one below   
+![](Tron2.JPG)    
+
+
  
 Then add a computer opponent
 ----------------------------
