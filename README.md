@@ -12,17 +12,29 @@ Start with a single player game
 2. In `setup()` draw one red rectangle that fills the screen and then a slightly smaller black rectangle inside of it. This  create a border will be the walls that contain the light cycles. Delete the `background()` in `draw()` and run your program. It should look similar to this:   
 ![](Tron1.JPG)   
 3. Declare three global variables `x`, `y` and `direction`. Initialize `x` and `y` to the center of the screen and `direction` to 1.
-4. In `keyPressed()` write an `if` that checks the value stored in `key`.
+3. In `draw()` set the `stroke()` to white and then draw a `point()` at (x,y). Run your program. You should see a small white dot in the center of the screen.
+3. Under the other code in `draw()` write four `if` statmeents
++ If `direction` is 1, decrement `y` 
++ If `direction` is 2, increment `x` 
++ If `direction` is 3, increment `y` 
++ If `direction` is 4, decrement `x` 
+4. Run the program and we should see a white light cycle trail moving toward the top of the screen. In order to controle the direction of the light cycle add a `function keyPressed()` that contains four `if` statements that check the value stored in `key`.
 + If key means "up", set `direction` to 1
 + If key means "right", set `direction` to 2
 + If key means "down", set `direction` to 3
 + If key means "left", set `direction` to 4
-5. The game is over when we cross a light cycle trail. To find out if we are touching the trail, we will use the `get()` function. We will also use `text()` to display a message that the game is over.    
+5. The game is over when we cross a light cycle trail. To find out if we are touching the trail, we will use add a `notBlack()` function. At the bottom of the program   
 ```javascript
-if get(x,y) != color(0,0,0): #if the color at this position isn't black, I ran into something!       
-    text("Game Over!",300,200);   
+function notBlack(){
+  let a = get(x,y);
+  if(a[0] != 0) return true;
+  else if(a[1] != 0) return true;
+  else if(a[2] != 0) return true;
+  return false;
+}  
 ```
-6. After the `get()` use the `point()` function to draw a point at the current coordinates.
+6. At the top of `draw()` add an `if` statement that checks if (x,y) is not black like the one below   
+![](Tron2.JPG)
 7. For now, don't use `smooth()` or `strokeWeight()` as this will make the program much more complicated.
 At this point you should have a working single player game. You will want the game to end if your trail crosses another trail or goes out of bounds.
  
