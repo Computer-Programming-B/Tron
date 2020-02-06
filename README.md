@@ -9,16 +9,16 @@ Tron was a Disney movie that was released in 1982. It was one of the earliest fe
 Start with a single player game
 -------------------------------
 1. Start a new program. Save your program with a meaningful name.
-2. In `setup()` draw one rectangle that fills the screen and then a slightly smaller differently colored rectangle inside of it. This  create a border will be the walls that contain the light cycles. Delete the `background()` in `draw()` and run your program. It should look similar to this:   
+2. In `setup()` draw one red rectangle that fills the screen and then a slightly smaller black rectangle inside of it. This  create a border will be the walls that contain the light cycles. Delete the `background()` in `draw()` and run your program. It should look similar to this:   
 ![](Tron1.JPG)   
-3. Declare and initialize three global variables `x`, `y` and `direction`.
+3. Declare three global variables `x`, `y` and `direction`. Initialize `x` and `y` to the center of the screen and `direction` to 1.
 4. In `keyPressed()` write an `if` that checks the value stored in `key`.
-+ If key means "up", decrease y
-+ If key means "down", increase y
-+ If key means "left", decrease x
-+ If key means "right", increase x
++ If key means "up", set `direction` to 1
++ If key means "right", set `direction` to 2
++ If key means "down", set `direction` to 3
++ If key means "left", set `direction` to 4
 5. The game is over when we cross a light cycle trail. To find out if we are touching the trail, we will use the `get()` function. We will also use `text()` to display a message that the game is over.    
-```python
+```javascript
 if get(x,y) != color(0,0,0): #if the color at this position isn't black, I ran into something!       
     text("Game Over!",300,200);   
 ```
