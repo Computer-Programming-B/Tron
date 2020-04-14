@@ -6,7 +6,7 @@ Tron was a Disney movie that was released in 1982. It was one of the earliest fe
  
 
  
-Start with a single player game
+Suggested steps for starting with a single player game
 -------------------------------
 You may find slides 23 - 38 of the [Functions, Algorithms and Abstractions presentation](https://docs.google.com/presentation/d/12evLVpEOAdoKxIjuTu3OP5GegrFHFTkJHr4dX1lfEow/edit?usp=sharing) and/or [this video](http://youtu.be/5LaX86RCMuQ?hd=1) helpful in completing the following steps.   
 
