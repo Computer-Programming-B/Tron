@@ -1,5 +1,6 @@
 Tron
 ====
+![](TronLightCycle.jpg)
 Background: A good game from a bad movie
 -----------------------------------------
 Tron was a Disney movie that was released in 1982. It was one of the earliest feature films to reflect the video-game craze of the 1980s. Jeff Bridges stars as a computer programmer who becomes part of the very game that he's programming. The game is a "light cycle duel". Your light cycle races across the arena leaving a trail of laser light behind you. Light cycles can only make 90 degree turns. Touching a laser trail destroys a light cycle, so you try to drive your opponents into a light trail while avoiding the trails yourself. (You can watch the [Tron light cycle scene on YouTube](https://www.youtube.com/watch?v=-BZxGhNdz1k)) There are many examples of the tron light cycle game on the internet, one is at [http://www.fltron.com/](http://www.fltron.com/).
