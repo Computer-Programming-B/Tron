@@ -14,8 +14,8 @@ Suggested steps for starting with a single player game
 You may find slides 23 - 38 of the [Functions, Algorithms and Abstractions presentation](https://docs.google.com/presentation/d/12evLVpEOAdoKxIjuTu3OP5GegrFHFTkJHr4dX1lfEow/edit?usp=sharing) and/or [this video](http://youtu.be/5LaX86RCMuQ?hd=1) helpful in completing the following steps.   
 
 1. Move background to `setup()`, declare two variables for `x` and `y` and initialize each to 200. Change the background color to blue, and make a slightly smaller black rectangle inside of it
-3. In `draw()` set the `stroke()` to white and then draw a `point()` at (x,y). After that, increase `x` by 1. Run your program. You should see a small white dot in the center of the screen move to the right leaving a trail behind it.
-4. Copy the following `notBlack()` function into the bottom of your program. Make sure it not inside the curly braces of another function.
+2. In `draw()` set the `stroke()` to white and then draw a `point()` at (x,y). After that, increase `x` by 1. Run your program. You should see a small white dot in the center of the screen move to the right leaving a trail behind it.
+3. Copy the following `notBlack()` function into the bottom of your program. Make sure it not inside the curly braces of another function.
 ```javascript
 function notBlack() {
   let a = get(x, y);
@@ -25,7 +25,7 @@ function notBlack() {
   return false;
 }
 ```
-5. Declare a `gameOver` variable at the top of your program and intialize it to `false`. 
+4. Declare a `gameOver` variable at the top of your program and intialize it to `false`. 
 6. Add an `if` statement to check if `notBlack()` is `true`. If so, display a "GAME OVER" message. and set `gameOver` to `true`.
 7. Add another `if` statement about the previous one. If `gameOver` is `true`, then `return;`
 8. Replace the code in `draw()` that makes `x` one bigger with four `if` statmeents
