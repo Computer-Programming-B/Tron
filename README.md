@@ -36,7 +36,7 @@ function notBlack() {
 + If `keyCode` is 39, set `direction` to 39
 + If `keyCode` is 40, set `direction` to 40
 10. Run the program. Once a person clicks on the screen, the light cycle should now be able to turn with the arrow keys
-11. Add a 'mousePressed` function that increases `direction` by 1 with a right click and decreases it by 1 with a left click.
+11. Add a `mousePressed` function that increases `direction` by 1 with a right click and decreases it by 1 with a left click.
 12. At this point you should have a working single player game. You should be able to operate the light cycle with either the keyboard or mouse
 
 Extensions:
