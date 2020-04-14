@@ -8,34 +8,35 @@ Tron was a Disney movie that was released in 1982. It was one of the earliest fe
  
 Start with a single player game
 -------------------------------
-1. Start a new program. Save your program with a meaningful name.
-2. In `setup()` draw one red rectangle that fills the screen and then a slightly smaller black rectangle inside of it. This  create a border will be the walls that contain the light cycles. Delete the `background()` in `draw()` and run your program. It should look similar to this:   
-![](Tron1.JPG)   
-3. Declare three global variables `x`, `y` and `direction`. Initialize `x` and `y` to the center of the screen and `direction` to 1.
-3. In `draw()` set the `stroke()` to white and then draw a `point()` at (x,y). Run your program. You should see a small white dot in the center of the screen.
-3. Under the other code in `draw()` write four `if` statmeents
-+ If `direction` is 1, decrement `y` 
-+ If `direction` is 2, increment `x` 
-+ If `direction` is 3, increment `y` 
-+ If `direction` is 4, decrement `x` 
-4. Run the program and we should see a white light cycle trail moving toward the top of the screen. In order to controle the direction of the light cycle add a `function keyPressed()` that contains four `if` statements that check the value stored in `key`.
-+ If key means "up", set `direction` to 1
-+ If key means "right", set `direction` to 2
-+ If key means "down", set `direction` to 3
-+ If key means "left", set `direction` to 4
-5. Run the program. Once a person clicks on the screen, the light cycle should now be able to turn
-6. The game is over when we cross a light cycle trail. To find out if we are touching the trail, we will use add a `notBlack()` function. At the bottom of the program   
+1. You may find slides 23 - 38 of the [Functions, Algorithms and Abstractions presentation](https://docs.google.com/presentation/d/12evLVpEOAdoKxIjuTu3OP5GegrFHFTkJHr4dX1lfEow/edit?usp=sharing) and/or [this video](http://youtu.be/5LaX86RCMuQ?hd=1) helpful in completing the following steps.
+2. Move background to `setup()`, declare two variables for `x` and `y` and initialize each to 200. Change the background color to blue, and make a slightly smaller black rectangle inside of it
+3. In `draw()` set the `stroke()` to white and then draw a `point()` at (x,y). After that, increase `x` by 1. Run your program. You should see a small white dot in the center of the screen move to the right leaving a trail behind it.
+4. Copy the following `notBlack()` function into the bottom of your program. Make sure it not inside the curly braces of another function.
 ```javascript
-function notBlack(){
-  let a = get(x,y);
-  if(a[0] != 0) return true;
-  else if(a[1] != 0) return true;
-  else if(a[2] != 0) return true;
+function notBlack() {
+  let a = get(x, y);
+  if (a[0] != 0) return true;
+  else if (a[1] != 0) return true;
+  else if (a[2] != 0) return true;
   return false;
-}  
+}
 ```
-7. At this point you should have a working single player game. To end the game if your trail crosses another trail or goes out of bounds add an `if` statement at the top of `draw()` that checks if (x,y) is not black like the one below   
-![](Tron2.JPG)    
+5. Declare a `gameOver` variable at the top of your program and intialize it to `false`. 
+6. Add an `if` statement to check if `notBlack()` is `true`. If so, display a "GAME OVER" message. and set `gameOver` to `true`.
+7. Add another `if` statement about the previous one. If `gameOver` is `true`, then `return;`
+8. Replace the code in `draw()` that makes `x` one bigger with four `if` statmeents
++ If `direction` is 37, make `x` smaller by 1 
++ If `direction` is 38, make `y` smaller by 1 
++ If `direction` is 39, make `x` bigger by 1
++ If `direction` is 40, make `y `bigger by 1 
+9. Add a `function keyPressed()` that changes `direction` to match `keyCode`.
++ If `keyCode` is 37, set `direction` to 37
++ If keyCode` is 38, set `direction` to 38
++ If keyCode` is 39, set `direction` to 39
++ If keyCode` is 40, set `direction` to 40
+10. Run the program. Once a person clicks on the screen, the light cycle should now be able to turn with the arrow keys
+11. Add a 'mousePressed` function that increases `direction` by 1 with a right click and decreases it by 1 with a left click.
+12. At this point you should have a working single player game. You should be able to operate the light cycle with either the keyboard or mouse
 
 
  
@@ -55,7 +56,11 @@ if(compDir == RIGHT):                   # if the computer is moving right
 
 Extensions:
 -----------
-If you have extra time you can add more features to the game to make it more interesting. You can make the line thicker by making the dots with `rect()` instead of `point()`, just make sure to move the x and y coordinates by one more than the size of the rectangle. You'll probably want a variable to hold the size of the dot. You can add extra computer opponents or even another human player. You could start the `frameRate` out at a low value, and increase it as the game progresses to make the light cycles move faster the longer you play. Be creative and have fun, your tron game doesn't have to look or work like any other.
+Your tron game doesn't have to look or work like any other. Possible extensions are:
++ Added graphics for collisions
++ A timer that increase the score the longer the player avoids crashing
++ A two player game where one person uses the mouse and the other uses the keyboard
++ A computer opponent
 
 Samples of Student Work 
 -----------------------
