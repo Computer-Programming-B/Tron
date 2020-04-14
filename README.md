@@ -38,22 +38,6 @@ function notBlack() {
 11. Add a 'mousePressed` function that increases `direction` by 1 with a right click and decreases it by 1 with a left click.
 12. At this point you should have a working single player game. You should be able to operate the light cycle with either the keyboard or mouse
 
-
- 
-Then add a computer opponent
-----------------------------
-You may find slides 374 - 386 of the PythonProcessing PowerPoint helpful in adding a computer opponent.
-1. At this point our `draw()` function is getting big and ugly. Once you get the basic single player tron game working, break it up into functions—put the code that moves the Human player in its own `human()` function.
-2. Now we can concentrate on the computer. We need a function similar to `human()`, let’s call it `computer()`. We’ll use `human()` as a basis for `computer()`. What will be the same? different?
-3. The computer will need its own variables for its position and direction. The direction variable is similar to key in that it could also be a char but it’s not really a key press, it just stores the direction the computer is traveling
-4. The problem now is that the computer never changes direction, We need to add code so that if the computer is about to run into a wall, it will change direction. That means changing the computer direction variable (called `compDir` in my program), something like:   
-```python
-if(compDir == RIGHT):                   # if the computer is moving right
-   compX = compX + 1                    # move the computer one pixel right
-   if(get(compX+1,compY) != color(0)):  # then look one pixel ahead, will I run into something that isn't black?
-      compDir = DOWN                    # turn!
-```
-
 Extensions:
 -----------
 Your tron game doesn't have to look or work like any other. Possible extensions are:
