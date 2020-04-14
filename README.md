@@ -1,7 +1,7 @@
 Tron
 ====   
 
-![](TronLightCycles.JPG)   
+![](TronLighCycles.JPG)   
 
 Background: A good game from a bad movie
 -----------------------------------------
