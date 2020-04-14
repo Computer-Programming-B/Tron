@@ -26,21 +26,21 @@ function notBlack() {
 }
 ```
 4. Declare a `gameOver` variable at the top of your program and intialize it to `false`. 
-6. Add an `if` statement to check if `notBlack()` is `true`. If so, display a "GAME OVER" message. and set `gameOver` to `true`.
-7. Add another `if` statement about the previous one. If `gameOver` is `true`, then `return;`
-8. Replace the code in `draw()` that makes `x` one bigger with four `if` statmeents
+5. Add an `if` statement to check if `notBlack()` is `true`. If so, display a "GAME OVER" message. and set `gameOver` to `true`.
+6. Add another `if` statement about the previous one. If `gameOver` is `true`, then `return;`
+7. Replace the code in `draw()` that makes `x` one bigger with four `if` statmeents
 + If `direction` is 37, make `x` smaller by 1 
 + If `direction` is 38, make `y` smaller by 1 
 + If `direction` is 39, make `x` bigger by 1
 + If `direction` is 40, make `y `bigger by 1 
-9. Add a `function keyPressed()` that changes `direction` to match `keyCode`. That is:
+8. Add a `function keyPressed()` that changes `direction` to match `keyCode`. That is:
 + If `keyCode` is 37, set `direction` to 37
 + If `keyCode` is 38, set `direction` to 38
 + If `keyCode` is 39, set `direction` to 39
 + If `keyCode` is 40, set `direction` to 40
-10. Run the program. Once a person clicks on the screen, the light cycle should now be able to turn with the arrow keys
-11. Add a `mousePressed` function that increases `direction` by 1 with a right click and decreases it by 1 with a left click.
-12. At this point you should have a working single player game. You should be able to operate the light cycle with either the keyboard or mouse
+9. Run the program. Once a person clicks on the screen, the light cycle should now be able to turn with the arrow keys
+10. Add a `mousePressed` function that increases `direction` by 1 with a right click and decreases it by 1 with a left click.
+11. At this point you should have a working single player game. You should be able to operate the light cycle with either the keyboard or mouse
 
 Extensions:
 -----------
