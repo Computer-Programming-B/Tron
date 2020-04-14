@@ -42,9 +42,11 @@ Extensions:
 -----------
 Your tron game doesn't have to look or work like any other. Possible extensions are:
 + Added graphics for collisions
++ Add obstacles or a maze to make the game more challenging
 + A timer that increase the score the longer the player avoids crashing
 + A two player game where one person uses the mouse and the other uses the keyboard
 + A computer opponent
+Your tron game doesn't have to work or look like any other. Have fun and be creative!
 
 Samples of Student Work 
 -----------------------
