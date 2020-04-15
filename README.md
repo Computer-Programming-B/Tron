@@ -48,6 +48,7 @@ Once you get the basic single player game working, you can start adding other fe
 + Added graphics for collisions
 + Added obstacles or a maze to make the game more challenging
 + A timer that increases the score the longer the player avoids crashing
++ The ability to restart the game
 + Turbo mode and/or power ups to move the light cycle faster
 + Self driving mode where like a self driving car the light cycle automatically avoids obstacles
 + A two player game where one person uses the mouse and the other uses the keyboard
