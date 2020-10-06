@@ -18,7 +18,7 @@ You may find slides 23 - 38 of the [Functions, Algorithms and Abstractions prese
 3. Copy the following `notBlack()` function into the bottom of your program. Make sure it not inside the curly braces of another function.
 ```javascript
 function notBlack() {
-  let a = get(x, y);
+  var a = get(x, y);
   if (a[0] != 0) return true;
   else if (a[1] != 0) return true;
   else if (a[2] != 0) return true;
