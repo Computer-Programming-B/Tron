@@ -42,7 +42,7 @@ function notBlack() {
 
 Extensions:
 -----------
-Once you get the basic single player game working, you can start adding other features. Your tron game doesn't have to look or work like any other, have fun and be creative! Slides 39 - 58 of the [Functions, Algorithms and Abstractions presentation](https://docs.google.com/presentation/d/12evLVpEOAdoKxIjuTu3OP5GegrFHFTkJHr4dX1lfEow/edit?usp=sharing) have more information on possible extensions like:
+Once you get the basic single player game working, you can start adding other features. Your tron game doesn't have to look or work like any other, have fun and be creative! Possible extensions inlcude:
 + Added graphics for collisions
 + Added obstacles or a maze to make the game more challenging
 + A timer that increases the score the longer the player avoids crashing
