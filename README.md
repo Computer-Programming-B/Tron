@@ -38,7 +38,8 @@ function notBlack() {
 + If `keyCode` is 40, set `direction` to 40
 9. Run the program. Once a person clicks on the screen, the light cycle should now be able to turn with the arrow keys
 10. Add a `mousePressed` function that increases `direction` by 1 with a right click and decreases it by 1 with a left click.
-11. At this point you should have a working single player game. You should be able to operate the light cycle with either the keyboard or mouse
+11. There is a video lesson on the above steps: [Starting the tron assignment](https://www.youtube.com/watch?v=5LaX86RCMuQ)   
+12. At this point you should have a working single player game. You should be able to operate the light cycle with either the keyboard or mouse. 
 
 Extensions:
 -----------
@@ -51,7 +52,6 @@ Once you get the basic single player game working, you can start adding other fe
 + Self driving mode where like a self driving car the light cycle automatically avoids obstacles (you may find [this video](http://youtu.be/2QuXanc6Yyk?hd=1) helpful on making an autonomous tron light cycle)
 + A two player game where one person uses the mouse and the other uses the keyboard
 + A computer opponent (or even multiple computer opponents for real craziness!)
-
 
 Samples of Student Work 
 -----------------------
