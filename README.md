@@ -17,9 +17,9 @@ Suggested steps for starting with a single player game
 ```javascript
 function notBlack() {
   var a = get(x, y);
-  if (a[0] != 0) return true;
-  else if (a[1] != 0) return true;
-  else if (a[2] != 0) return true;
+  if (a[0] !== 0) return true;
+  else if (a[1] !== 0) return true;
+  else if (a[2] !== 0) return true;
   return false;
 }
 ```
