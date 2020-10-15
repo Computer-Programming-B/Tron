@@ -12,25 +12,27 @@ Tron was a Disney movie that was released in 1982. It was one of the earliest fe
 Suggested steps for starting with a single player game
 -------------------------------
 1. Set up an infinite loop that moves the turtle forward. Something like this:   
-```python
-from turtle import *
-
-pen(pensize=3) #make line thickness 3
-
-while True:
-    forward(1)
-```
+   ```python
+   from turtle import *
+   
+   pen(pensize=3) #make line thickness 3
+   
+   while True:
+       forward(1)
+   ```
 2. Now we need a way to have the program "listen" for the left and right arrow keys. Add `getscreen().listen()` above the `while` loop   
 3. Next we'll define two functions that can turn the turtle left or right. Here's the function for left. Define it above the `while` loop:   
-```python
-def goLeft():
-    left(90)
-```
+ ```python
+ def goLeft():
+     left(90)
+ ```
 4. Now we will "bind" the left and right arrow keys to the functions that we just defined. Here's the code that binds the `goLeft` function to the `"Left"` arrow key:   
-```python
-getscreen().onkey(goLeft,"Left")
-```
+ ```python
+ getscreen().onkey(goLeft,"Left")
+ ```
 5. At this point you should have a working single player game. You should be able to operate the light cycle with either the keyboard or mouse. 
+6. Now we'll store the (x,y) coordinates of the light cycle as a tuple in a list
+7. We can check for a collision with our light cycle trail by checking to see if our current position is already in the list
 
 Extensions:
 -----------
