@@ -21,7 +21,7 @@ Suggested steps for starting with a single player game
        forward(1)
    ```
 2. Now we need to have the program "listen" for the left and right arrow keys. Add `listen()` above the `while` loop   
-3. Next we'll define two functions that can turn the turtle left or right. Here's the function for left. Define it above the `while` loop:   
+3. Since light cycles can only turn by 90° we'll define two functions that can turn the turtle left or right by 90°. Here's the function for left. Define it above the `while` loop:   
    ```python
    def goLeft():
       left(90)
