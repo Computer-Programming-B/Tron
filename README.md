@@ -42,8 +42,8 @@ Once you get the basic single player game working, you can start adding other fe
 + A timer that increases the score the longer the player avoids crashing
 + The ability to restart the game
 + Turbo mode and/or power ups to move the light cycle faster
-+ Self driving mode where like a self driving car the light cycle automatically avoids obstacles (you may find [this video](http://youtu.be/2QuXanc6Yyk?hd=1) helpful on making an autonomous tron light cycle)
-+ A two player game where one person uses the mouse and the other uses the keyboard
++ Self driving mode where like a self driving car the light cycle automatically avoids obstacles 
++ A two player game
 + A computer opponent (or even multiple computer opponents for real craziness!)
 
 Samples of Student Work 
